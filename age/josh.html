@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- Inspired by the "Motivation" extension on Chrome-->
+<!-- Written by Josh Spicer on Dec 15, 2017-->
+<title> Age </title>
+
+<head>
+<style>
+  body {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: monospace;
+  }
+
+body {
+  background-color: gray;
+}
+</style>
+</head>
+
+<body>
+  <h1>How old is josh?</h1>
+
+  <p>
+<h3>
+    <span id="age">0</span> years old!
+</h3>
+  </p>
+
+</body>
+
+  <script>
+
+  function calculateAge() {
+    var birthday = new Date("October 17, 1997 04:18:00");
+    var currentTime = new Date();
+    var difference = currentTime - birthday;
+    // How old am I in years (with a decimal)
+    return (difference / (1000*60*60*24)) / 365.2422;
+  }
+
+  window.setInterval(function(){
+    document.getElementById("age").innerHTML = calculateAge();
+  }, 100);
+
+
+  </script>
+
+
+
+
+</html>

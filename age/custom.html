@@ -24,32 +24,12 @@ body {
 </head>
 
 <body>
-  <h1>When were you born?</h1>
+  <h1>How old are you?</h1>
 
   <p>
 <h3>
-  <form action="custom.html">
-  Month:
-  <select name="m">
-        <option value="Jan">January</option>
-        <option value="Feb">February</option>
-        <option value="Mar">March</option>
-        <option value="Apr">April</option>
-        <option value="May">May</option>
-        <option value="Jun">June</option>
-        <option value="July">July</option>
-        <option value="Aug">August</option>
-        <option value="Sept">September</option>
-        <option value="Oct">October</option>
-        <option value="Nov">November</option>
-        <option value="Dec">December</option>
-</select><br>
-  Day: <input type="text" name="d"><br>
-  Year: <input type="text" name="y"><br>
-  Hour: <input type="text" name="hr"><br>
-  Minute: <input type="text" name="min"><br>
-  <button type="submit">Calculate</button>
-</form>
+    Your birthday is <span id="birthday">x</span><br><br>
+    You are <span id="age">0</span> years old!
 </h3>
   </p>
 
@@ -74,8 +54,10 @@ body {
     var month = getQueryVariable("m");
     var day = getQueryVariable("d");
     var year = getQueryVariable("y");
-
-    var birthday = new Date(month + " " + day + ", " + year  + " 04:18:00");
+    var hour = getQueryVariable("hr");
+    var minute = getQueryVariable("min");
+    // "October 17, 1997 04:18:00"
+    var birthday = new Date(month + " " + day + ", " + year  + " " +  hour + ":" + minute + ":00");
     var currentTime = new Date();
     var difference = currentTime - birthday;
     // How old am I in years (with a decimal)
@@ -86,8 +68,10 @@ body {
     var month = getQueryVariable("m");
     var day = getQueryVariable("d");
     var year = getQueryVariable("y");
+    var hour = getQueryVariable("hr");
+    var minute = getQueryVariable("min")
 
-    return month + " " + day + ", " + year;
+    return month + " " + day + ", " + year + " at " + hour + ":" + minute;
 
   }
 

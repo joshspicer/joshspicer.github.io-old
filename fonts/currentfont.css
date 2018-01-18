@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'exo';
+    src:url('exo2-light-webfont.eot');
+    src:
+    url('exo/exo2-light-webfont.woff2') format('woff2'),
+    url('exo/exo2-light-webfont.svg#filename') format('svg'),
+    url('exo/exo2-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,code {
+font-family: 'exo', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}

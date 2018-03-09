@@ -32,6 +32,12 @@
 
 </head>
 <body>
+  <style>
+  .fit { /*  relative size */
+  max-width: 100%;
+  max-height: 100%;
+  }
+  </style>
   <script>
   // Pick a photo of the day
   // mod how many pictures I currently have on this server.
@@ -41,6 +47,8 @@
     var location = "./" + num + ".jpg"
     document.getElementById("cinnaImage").src= location;
   }
+
+
 
   </script>
    <div class="container-fluid">
@@ -61,7 +69,7 @@
                      Please enjoy the Cinnamon Photo of the Day!&trade;
                      <br><br>
 
-                     <img id="cinnaImage" src="" onerror="whichPhoto()" class="img-circle"/>
+                     <img class="fit img-circle" id="cinnaImage" src="" onerror="whichPhoto()" />
 
                   </p class="lead">
                </div>

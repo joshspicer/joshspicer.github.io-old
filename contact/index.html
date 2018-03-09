@@ -24,7 +24,6 @@
    <meta name="author" content="Josh Spicer">
    <meta name="contact" content="hello@joshspicer.com">
 
-
    <title>Josh Spicer</title>
 
    <!-- Josh: Current universal font -->
@@ -32,17 +31,6 @@
 
 </head>
 <body>
-  <script>
-  // Pick a photo of the day
-  // mod how many pictures I currently have on this server.
-  function whichPhoto() {
-    var date = new Date()
-    var num = (date.getDay() * date.getYear() * date.getMonth()) % 119
-    var location = "./" + num + ".jpg"
-    document.getElementById("cinnaImage").src= location;
-  }
-
-  </script>
    <div class="container-fluid">
       <br><br>
       <div class="row">
@@ -50,18 +38,28 @@
             <div class="row">
                <div class="col-md-1">
                </div>
-               <div class="col-md-2">
-                    <!-- <img alt="Josh" src="../assets/josh_square.JPG" height="250" width="250" class="img-circle"/> -->
+               <div class="col-md-3">
+                  <img alt="Josh" src="../assets/josh_square.JPG" height="270"
+                  width="270" class="img-circle"/>
                </div>
-               <div class="col-md-8">
-                  <h2>
-                     <a href="../"> Josh Spicer</a>
-                  </h2>
-                  <p class="lead">
-                     Please enjoy the Cinnamon Photo of the day!&trade;
-                     <br><br>
+               <div class="col-md-7">
+                  <h1>
+                        <a href="../">Josh Spicer</a>
+                  </h1>
+                  <br>
 
-                     <img id="cinnaImage" src="" onerror="whichPhoto()" class="img-circle"/>
+                  <h3> The best way to reach me is by <strong>email</strong> </h3><h2><code>hello@joshspicer.com</code></h2>
+                  <br>
+                  <h3> Facebook Messenger</h3> <h2><code>http://m.me/spicer.josh</code></h2>
+                  <br>
+                  <h3> bitcoin address</h3> <h2><code>1F5EAnZXJEYcvesamd28V4hv8J2Ve63DVh</code></h2>
+                  <br>
+                  <h3><a href="../pgp.txt">PGP</a> Fingerprint</h3> <h2><code>415A 4243 34C5 C83A BE00  04CA D5C4 AC84 C321 1123</code></h2><br>
+
+
+
+
+
 
                   </p class="lead">
                </div>
@@ -87,9 +85,9 @@
                   <p class="lead"><font color="gray" size="4">
                     <a href="../archive"> archive</a>
                     |
-                     <a href="#"> cinnamon</a>
+                     <a href="../cinnamon"> cinnamon</a>
                     |
-                     <a href="../contact">contact</a>
+                     <a href="#">contact</a>
                      |
                      <a href="../geo.png"> GEO</a>
                   </font></p class="lead">

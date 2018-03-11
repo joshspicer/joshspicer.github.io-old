@@ -31,6 +31,14 @@
 
 </head>
 <body>
+  <script>
+function pickRandomCoverPhoto() {
+  var num = Math.floor((Math.random() * 100) % 2);
+  document.getElementById("coverPhoto").src= "../assets/me/" + num + ".png";
+  //alert(num);
+  return 0;
+}
+</script>
    <div class="container-fluid">
       <br><br>
       <div class="row">
@@ -39,13 +47,14 @@
                <div class="col-md-1">
                </div>
                <div class="col-md-3">
-                  <img alt="Josh" src="../assets/josh_square.JPG" height="270"
-                  width="270" class="img-circle"/>
+                 <img alt="Josh" id="coverPhoto" src="JAVASCRIPT" onerror="pickRandomCoverPhoto()" onclick="pickRandomCoverPhoto()" height="270" width="270" class="img-circle"/> 
                </div>
                <div class="col-md-7">
                   <h1>
                         <a href="../">Josh Spicer</a>
                   </h1>
+                  <noscript style="color: red">joshspicer.com uses javascript for key aspects of the site.  Please enable it!</noscript>
+
                   <br>
 
                   <h3> The best way to reach me is by <strong>email</strong> </h3><h2><code>hello@joshspicer.com</code></h2>

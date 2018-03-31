@@ -1,4 +1,7 @@
 <!-- Created for joshspicer.com -->
+<!-- In dire need of a rewrite.  I've learned so much about web-dev since I first wrote this site.
+     Check out https://parade.events for what I mean! -->
+
 <!DOCTYPE HTML>
 <html lang="en">
 <!--jquery-->
@@ -38,13 +41,12 @@
 p {
   font-size: 21px;
   margin-top: 18px;
-
 }
 </style>
 <script>
 function pickRandomCoverPhoto() {
   var num = Math.floor((Math.random() * 100) % 3);
-  document.getElementById("coverPhoto").src= "./assets/me/" + num + ".png";
+  document.getElementById("coverPhoto").src = "./assets/me/" + num + ".png";
   // alert(num);
   return 0;
 }
@@ -78,11 +80,19 @@ function pickRandomCoverPhoto() {
                      <strong>Northeastern University</strong> in Boston.
                    </p>
                      <!-- Bio -->
-                     <p>I love playing <strong>tennis</strong>, attending $20
-                     <strong>concerts</strong> throughout the city, and
-                    collecting <strong>coffee</strong> mugs from every place I
-                     travel to.<!--, and <a href="./about/index.html">more...</a> --></p>
-                     <p>I'm currently on co-op working full-time as a <strong>Security Consultant / Pen Tester</strong>.</p><br>
+                     <p>
+                       I love playing <b>tennis</b>, attending $20
+                       <b>concerts</b> throughout the city, and
+                       collecting <b>coffee</b> mugs from every place I
+                       travel to.
+                     </p>
+                     <p>
+                       I'm currently on co-op working full-time as a <strong>Security Consultant / Pen Tester</strong>.
+                     </p>
+                      <p>
+                        Check out my current project, <b><a href='https://parade.events/'>Parade: an events app for NU Clubs.</a></b>
+                      </p>
+                     <br>
 
                      <!-- Social Media Links -->
                      <!-- css/social_buttons.css -->

@@ -35,11 +35,10 @@
   margin-top: 40px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 1000px) {
+/* Responsive layout*/
+@media screen and (max-width: 580px) {
     .details {
-      text-align: center;
-      padding-left: 15px;
-      padding-right: 15px;
+      font-size: 12.25px;
+      padding-bottom: 3px;
       }
-  } */
+  }

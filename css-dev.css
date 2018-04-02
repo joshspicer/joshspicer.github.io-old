@@ -19,6 +19,7 @@
   padding-right: 5px;
 }
 
+
 .sButtons {
   text-align: center;
   padding-top: 10px;
@@ -37,7 +38,7 @@
 
 /* Responsive layout*/
 @media screen and (max-width: 580px) {
-    .details {
+    .details, .archiveItems {
       font-size: 13px;
       padding-bottom: 3px;
       }

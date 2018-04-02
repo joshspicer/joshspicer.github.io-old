@@ -1,4 +1,4 @@
-<!-- Created for joshspicer.com -->
+<!-- joshspicer.com -->
 <!DOCTYPE HTML>
 <html lang="en">
 <!--jquery-->
@@ -8,6 +8,8 @@
   crossorigin="anonymous"></script>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add icon library custom CSS -->
+<link href="../css/social_buttons.css" rel="stylesheet">
 <!-- Latest compiled JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -18,121 +20,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-
    <meta name="description" content="Joshua Spicer.
-   Computer Science Student at Northeastern University in Boston, MA.  ">
+   Computer Science Student at Northeastern University in Boston, MA.">
    <meta name="author" content="Josh Spicer">
    <meta name="contact" content="hello@joshspicer.com">
+   <meta name="keywords" content="josh,joshua,spicer,joshspicer,ma,
+   USA,whitman hanson,facebook,joshspicer_,josh.spicer,spicer.josh,
+   joshspicer37,twitter,joshspicer_,781,Boston,Northeastern,NEU,husky,huskies,
+   NU,University,Northeastern University,spicer.jo,Computer Science,Computer,CCIS,CS,CCS">
 
    <title>Josh Spicer</title>
 
    <!-- Josh: Current universal font -->
    <link href="../fonts/currentfont.css" rel="stylesheet">
 
+   <!-- Josh: Custom CSS (move to css/ )-->
+   <link href="../css-dev.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <script>
-function pickRandomCoverPhoto() {
-  var num = Math.floor((Math.random() * 100) % 2);
-  document.getElementById("coverPhoto").src= "../assets/me/" + num + ".png";
-  //alert(num);
-  return 0;
-}
-</script>
-   <div class="container-fluid">
-      <br><br>
-      <div class="row">
-         <div class="col-md-12">
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-3">
-                 <img alt="Josh" id="coverPhoto" src="JAVASCRIPT" onerror="pickRandomCoverPhoto()" onclick="pickRandomCoverPhoto()" height="270" width="270" class="img-circle"/> 
-               </div>
-               <div class="col-md-7">
-                  <h1>
-                        <a href="../">Josh Spicer</a>
-                  </h1>
-                  <noscript style="color: red">joshspicer.com uses javascript for key aspects of the site.  Please enable it!</noscript>
 
-                  <br>
+  <!-- Photo  -->
+  <img alt="Josh"
+  class='coverPhoto center'
+  id="coverPhoto"
+  src="../assets/me/1.png"
+  height="270" width="270"/>
 
-                  <h3> The best way to reach me is by <strong>email</strong> </h3><h2><code>hello@joshspicer.com</code></h2>
-                  <br>
-                  <h3> Facebook Messenger</h3> <h2><code>http://m.me/spicer.josh</code></h2>
-                  <br>
-                  <h3> bitcoin address</h3> <h2><code>1F5EAnZXJEYcvesamd28V4hv8J2Ve63DVh</code></h2>
-                  <br>
-                  <h3><a href="../PGP.txt">PGP</a> Fingerprint</h3> <h2><code>415A 4243 34C5 C83A BE00  04CA D5C4 AC84 C321 1123</code></h2><br>
+  <p class='title'><a href="../">Josh Spicer</a></p>
+
+  <!-- Nav -->
+  <p class="nav">
+    <a href=../archive> archive</a> |
+    <a href="../cinnamon"> cinnamon</a> |
+    <a href="../contact">contact</a> |
+    <a href=../geo.png> GEO</a>
+  </p>
+
+  <div class='details'>
+     <div style="display: inline-block; text-align: left; padding-left:5px">
+
+       <p>
+         The best way to reach me is by <strong>email</strong>
+       </p>
+         <p>
+             <a href="mailto:hello@joshspicer.com"><code>hello@joshspicer.com</code></a>
+          </p>
+
+        <p>
+          Facebook Messenger
+        </p>
+        <p> <code>http://m.me/spicer.josh</code> </p>
+
+        <p>
+          bitcoin address
+        </p>
+        <p><code>1F5EAnZXJEYcvesamd28V4hv8J2Ve63DVh</code></p>
+
+        <p>
+          <a href="../PGP.txt">PGP</a> Fingerprint
+        </p>
+        <p><code>415A 4243 34C5 C83A BE00  04CA D5C4 AC84 C321 1123</code></p>
 
 
-
-
-
-
-                  </p class="lead">
-               </div>
-               <div class="col-md-1">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-2">
-               </div>
-               <div class="col-md-8">
-               </div>
-               <div class="col-md-1">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-7">
-               </div>
-               <div class="col-md-3">
-                  <p class="lead"><font color="gray" size="4">
-                    <a href="../archive"> archive</a>
-                    |
-                     <a href="../cinnamon"> cinnamon</a>
-                    |
-                     <a href="#">contact</a>
-                     |
-                     <a href="../geo.png"> GEO</a>
-                  </font></p class="lead">
-               </div>
-               <div class="col-md-1">
-               </div>
-            </div>
-         </div>
-      </div>
    </div>
+ </div>
 
 
-   <!-- Modal -->
-   <div id="bitcoinModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-         <!-- Modal content-->
-         <div class="modal-content">
-            <div class="modal-header">
-               <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-               <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-         </div>
-
-      </div>
-   </div>
-
-
-
+  <!--TODO: Add whitelisted hex colors for background -->
 
 </body>
-
-</html>

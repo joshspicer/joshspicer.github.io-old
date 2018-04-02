@@ -1,7 +1,4 @@
-<!-- Created for joshspicer.com -->
-<!-- In dire need of a rewrite.  I've learned so much about web-dev since I first wrote this site.
-     Check out https://parade.events for what I mean! -->
-
+<!-- joshspicer.com -->
 <!DOCTYPE HTML>
 <html lang="en">
 <!--jquery-->
@@ -27,133 +24,68 @@
    Computer Science Student at Northeastern University in Boston, MA.">
    <meta name="author" content="Josh Spicer">
    <meta name="contact" content="hello@joshspicer.com">
-   <meta name="keywords" content="spiceman54j,josh,joshua,spicer,joshspicer,ma,
-   02382,USA,whitman hanson,facebook,joshspicer_,josh.spicer,spicer.josh,
+   <meta name="keywords" content="josh,joshua,spicer,joshspicer,ma,
+   USA,whitman hanson,facebook,joshspicer_,josh.spicer,spicer.josh,
    joshspicer37,twitter,joshspicer_,781,Boston,Northeastern,NEU,husky,huskies,
    NU,University,Northeastern University,spicer.jo,Computer Science,Computer,CCIS,CS,CCS">
 
    <title>Josh Spicer</title>
 
-<!-- Josh: Current universal font -->
-<link href="fonts/currentfont.css" rel="stylesheet">
+   <!-- Josh: Current universal font -->
+   <link href="fonts/currentfont.css" rel="stylesheet">
 
-<style>
-p {
-  font-size: 21px;
-  margin-top: 18px;
-}
-</style>
-<script>
-function pickRandomCoverPhoto() {
-  var num = Math.floor((Math.random() * 100) % 3);
-  document.getElementById("coverPhoto").src = "./assets/me/" + num + ".png";
-  // alert(num);
-  return 0;
-}
-</script>
+   <!-- Josh: Custom CSS (move to css/ )-->
+   <link href="./css-dev.css" rel="stylesheet">
+
 </head>
 
 <body>
-   <div class="container-fluid">
-      <br><br>
-      <div class="row">
-         <div class="col-md-12">
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-3">
 
-                  <img alt="Josh"
-                  id="coverPhoto"
-                  src="./assets/me/1.png"
-                  onclick="pickRandomCoverPhoto()"
-                  height="270" width="270" class="img-circle"/>
+  <!-- Photo  -->
+  <img alt="Josh"
+  class='coverPhoto center'
+  id="coverPhoto"
+  src="./assets/me/1.png"
+  height="270" width="270"/>
 
-               </div>
-               <div class="col-md-6">
-                  <h1>
-                     <a href="#"> Josh Spicer</a>
-                  </h1>
-                  <noscript style="color: red">joshspicer.com uses javascript for key aspects of the site.  Please enable it!</noscript>
-                  <p>
-                     Welcome! I'm a computer science/cyber ops student studying at
-                     <strong>Northeastern University</strong> in Boston.
-                   </p>
-                     <!-- Bio -->
-                     <p>
-                       I love playing <b>tennis</b>, attending $20
-                       <b>concerts</b> throughout the city, and
-                       collecting <b>coffee</b> mugs from every place I
-                       travel to.
-                     </p>
-                     <p>
-                       I'm currently on co-op working full-time as a <strong>Security Consultant / Pen Tester</strong>.
-                     </p>
-                      <p>
-                        Check out my current project, <b><a href='https://parade.events/'>Parade: an events app for NU Clubs.</a></b>
-                      </p>
-                     <br>
+  <p class='title'><a href="#">Josh Spicer</a></p>
 
-                     <!-- Social Media Links -->
-                     <!-- css/social_buttons.css -->
-                     <a href="http://facebook.com/spicer.josh" class="fa fa-facebook"></a>
-                     <a href="http://instagram.com/joshspicer_" class="fa fa-instagram"></a>
-                     <a href="http://linkedin.com/in/joshspicer" class="fa fa-linkedin"></a>
-                     <a href="http://github.com/joshspicer" class="fa fa-github"></a>
-                     <a href="https://open.spotify.com/user/joshspicer37" class="fa fa-spotify"></a>
+  <!-- Nav -->
+  <p class="nav">
+    <a href=./archive> archive</a> |
+    <a href="./cinnamon"> cinnamon</a> |
+    <a href="./contact">contact</a> |
+    <a href=./geo.png> GEO</a>
+  </p>
 
+  <!-- Bio -->
+  <p id='detail1' class='details'>
+    Welcome! I'm a Computer Science/Cyber Ops student<br> studying at <b>Northeastern
+      University</b> in Boston.
+ </p>
 
-                  </p class="lead">
-               </div>
-               <div class="col-md-3">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-2">
-               </div>
-               <div class="col-md-8">
-               </div>
-               <div class="col-md-1">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-1">
-               </div>
-               <div class="col-md-7">
-               </div>
-               <div class="col-md-3">
-                  <p class="lead"><font color="gray" size="4">
-                    <a href=./archive> archive</a>
-                    |
-                     <a href="./cinnamon"> cinnamon</a>
-                    |
-                     <a href="./contact">contact</a>
-                     |
-                     <a href=./geo.png> GEO</a>
+  <p id='detail2' class='details'>
+    I love playing <b>tennis</b>, attending $20 <b>concerts</b>, <br> and collecting <b>coffee</b> mugs from places I travel to.
+  </p>
 
+  <p id='detail3' class='details'>
+    I'm currently on co-op working full-time as a<br> <b>Security Consultant / Pen Tester</b>.
+  </p>
 
-                  </font></p class="lead">
-               </div>
-               <div class="col-md-1">
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+  <p id='detail4' class='details'>
+    Check out my current project, <br><b><a href='https://parade.events/'>Parade: an events app for NU Clubs.</a></b>
+  </p>
 
-   <!---Google analytics js-->
-   <!-- <script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- Social Media Links -->
+  <!-- css/social_buttons.css -->
+  <div class='sButtons'>
+    <a href="http://facebook.com/spicer.josh" class="fa fa-facebook"></a>
+    <a href="http://instagram.com/joshspicer_" class="fa fa-instagram"></a>
+    <a href="http://linkedin.com/in/joshspicer" class="fa fa-linkedin"></a>
+    <a href="http://github.com/joshspicer" class="fa fa-github"></a>
+    <a href="https://open.spotify.com/user/joshspicer37" class="fa fa-spotify"></a>
+  </div>
 
-   ga('create', 'UA-43238538-1', 'auto');
-   ga('send', 'pageview');
+  <!--TODO: Add whitelisted hex colors for background -->
 
-   </script> -->
 </body>
-
-</html>

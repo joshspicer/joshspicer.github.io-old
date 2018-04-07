@@ -14,7 +14,7 @@
 
 .details {
   text-align: center;
-  font-size:20px;
+  font-size:18px;
   padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
@@ -37,10 +37,18 @@
   margin-top: 40px;
 }
 
+.description {
+  font-size:15px;
+}
+
 /* Responsive layout*/
 @media screen and (max-width: 580px) {
     .details, .archiveItems {
       font-size: 13px;
       padding-bottom: 3px;
+      }
+
+      .description {
+        font-size: 11px;
       }
   }

@@ -1,4 +1,6 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/* @font-face {
     font-family: 'exo';
     src:url('exo2-light-webfont.eot');
     src:
@@ -7,10 +9,11 @@
     url('exo/exo2-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 *,code {
-font-family: 'exo', Arial, sans-serif;
+/* font-family: 'exo', Arial, sans-serif; */
+font-family: 'Muli', Arial, sans-serif;
 font-weight:normal;
 font-style:normal;
 }

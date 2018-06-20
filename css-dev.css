@@ -11,6 +11,11 @@
   padding-bottom: 18px;
 }
 
+#songName, #artistName {
+  font-weight: bold;
+  color: #8ACB8F;
+}
+
 
 .details {
   text-align: center;
@@ -37,9 +42,19 @@
   margin-top: 40px;
 }
 
+.archiveHeading {
+  font-size: 22px;
+}
+
 .description {
   font-size:15px;
   text-align: center;
+}
+
+.technologies {
+  font-size:12px;
+  text-align: center;
+  color: #2F5178;
 }
 
 /* Responsive layout*/
@@ -51,5 +66,10 @@
 
       .description {
         font-size: 11px;
+      }
+
+      .technologies {
+        font-size:9px;
+        color: #2F5178;
       }
   }

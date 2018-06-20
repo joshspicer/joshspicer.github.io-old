@@ -5,7 +5,8 @@
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Add icon library custom CSS -->
@@ -16,6 +17,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- My Lambda API -->
+<script src="./pollLambdaAPI.js"></script>
 <!-- Scale nicely on mobile!--->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,6 +52,14 @@
   height="270" width="270"/>
 
   <p class='title'><a style="text-decoration: none" href="#">Josh Spicer</a></p>
+  <p id='Spotify' class='details'>
+    <span id='songStatus'></span>
+    <span id='songName'></span>
+    <span id='filler1'></span>
+    <span id='artistName'></span>
+    <span id='filler2'></span>
+    <a href='#'>*</a>
+  </p>
 
   <!-- Nav -->
   <p class="nav">
@@ -74,6 +85,9 @@
     I'm currently on co-op working full-time as
     a<br> <b>Security Consultant / Pen Tester</b>.
   </p>
+
+
+
 
   <p id='detail4' class='details'>
     Check out my current project, <br><b>
